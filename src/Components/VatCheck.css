@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  padding-top: 25px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 14px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.info-section {
+  min-height: 250px;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .info-section {
+    min-height: 310px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .info-section {
+    min-height: 510px;
+  }
+}
+
+.field.is-grouped > .control {
+    flex-shrink: 1!important;
+}
+
+h2 {
+  display: inline-block;
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 80px!important;
+  text-shadow: .03em .03em 0 hsla(181, 100%, 46%, 0.5);
+  }
+
+  .polygon {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height:100vh;
+  }
+
+  #tsparticles {
+    height:100vh;
+  }
+
+  .control {
+    z-index: 6;
+  }
