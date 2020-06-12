@@ -68,3 +68,10 @@ h2 {
   .control {
     z-index: 6;
   }
+
+
+  @media only screen and (max-width: 508px) {
+    .polygon {
+      display: none
+    }
+  }
